@@ -1,13 +1,18 @@
-import styles from './Hero.module.css'
+import { Form, HeroTitle } from './Hero.module'
 
-const Hero = () => (
-  <form className={styles.form}>
+type Props = {
+  trocaTema: () => void
+}
+
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
+const Hero = (_props: Props) => (
+  <Form>
     <div className="container">
-      <h2 className={styles.heroTitle}>
+      <HeroTitle>
         As melhores vagas para tecnologia, design e artes visuais.
-      </h2>
+      </HeroTitle>
     </div>
-  </form>
+  </Form>
 )
 
 export default Hero
